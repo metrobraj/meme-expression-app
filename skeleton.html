@@ -1,0 +1,55 @@
+<!--the skeleton of our work-->
+<!--this one initializes html5-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--we encode the text in UTF-8 character coding(unicode character to bytes so the computer can read it)-->
+        <meta charset="UTF-8">
+        <!--this appears on your browser tab!-->
+        <title>Your Memey!</title>
+        <!--we can now link this to our css stylesheet; it renders everything at the start itself, so it dont look ugly for the user-->
+        <link rel="stylesheet" href="aesthetic.css">
+        <!--we'll bring our ai library now
+        cdn is content delivery network
+        jsDelivr is a popular free public CDN for web developers
+        /npm/ tells cdn to look into node package manager
+        mediapipe is google's camera utilities package
+        hands is by google. it marks 21 points on ur hand, so itll help us identify memes using hand sign -->
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+        <!--this is google's drawing helper script-->
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--this text appears as the biggest heading on top of our website-->
+        <h1>Know Your Meme!</h1>
+        <!--this will be our container, where we do stuff yeah-->
+        <div class="container">
+            <!--the left box, this shows the cam-->
+            <div class="box">
+                <h2>You!</h2>
+                <!--webcam will be linked to the cam
+                the video section defines the video element
+                autoplay runs it automatically without the user needing to input
+                the playsinline will not force fullscreen mode when it plays the video-->
+                <video id="webcam" autoplay playsinline></video>
+                <canvas id="output_canvas" width="500" height="300"></canvas>
+            </div>
+            <!--the right box, which shows the meme equivalent of your facial expression-->
+            <div class="box">
+                <h2>Your memey!</h2>
+                <!--this will show the image
+                the id is a handle the javascript will use to swap out our default src for the meme image
+                the src is linked to a waiting image
+                the alt is alternative text in case the image fails to load up
+                -->
+                <img id="memedisplay" src="https://dummyimage.com/400x300/cccccc/000000.png&text=Waiting+for+gesture..." alt="Meme Reaction">
+            </div>
+        </div>
+        <!--this will link to our JS file! why?
+        cuz html files load line by line from top to bottom, so we make sure
+        that the <video> and <img> already exist in memory before JS tries to
+        interact with them-->
+        <script src="script.js"></script>
+    </body>
+</html>

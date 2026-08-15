@@ -1,0 +1,47 @@
+body {
+    /* our font - comic sans */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*this centers all our text */
+    text-align: center;
+    /*this sets the background color*/
+    background-color:rgb(222, 209, 70);
+    /*margin - space OUTSIDE the box
+    padding - space INSIDE the box*/
+    margin: 0;
+    padding: 20px;
+}
+/*the dot tells css to look for our html element named container*/
+.container{
+    /*this is the flexbox, which basically aligns stuff horizontally or vertically*/
+    display:flex;
+    /*this aligns our child elements*/
+    justify-content:center;
+    /*this makes a gap of 20 pixels between the left and right box
+    the margin-top adds 20 pixels of space between our top heading and the boxes*/
+    gap: 20px;
+    margin-top:20px;
+}
+/*we style our box now*/
+.box {
+    background-color:antiquewhite;
+    /*this rounds off the corners of the boxes, giving them a cool UI look*/
+    border-radius:10px;
+    /*add internal space so the heading and video dont get too sticky with each other*/
+    padding:15px;
+    position: relative; /*creating an anchor point for absolute positioning */
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+video, canvas, img {
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+video, canvas {
+    position: absolute; /* stacks video and canvas over each other */
+    top:90px;          /* pushes them below the <h2> heading */
+    left:10px;         /* aligns with the box padding */
+}
