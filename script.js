@@ -50,7 +50,7 @@ hands.onResults((results) => {
             radius: 2
         });
         //we use another helper function detect, which we will use to analyze our 21 landmarks.
-        //detect(landmarks);
+        detect(landmarks);
         //temporary test
         //console.log("Hand detected!", landmarks);
     } else{
@@ -77,9 +77,6 @@ function detect(landmarks){
     }
     else if(indextip.y>middletip.y && indexknuckle.y>middleknuckle.y){
         memework.src= "assets/freedom.jpg";
-    }
-    else{
-        memework.src = "assets/default stare.jpg";
     }
 
 }
