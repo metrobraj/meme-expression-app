@@ -71,9 +71,14 @@ function detect(landmarks){
     const indexup = indextip.y<indexknuckle.y;
     const middledown = middletip.y>middleknuckle.y;
 
+
     if(indexup && middledown){
         memework.src = "assets/nerd.jpg";
     }
+    if(indextip.y<middletip.y && indexknuckle.y<middleknuckle.y){
+        memework.src= "assets/freedom.jpg"
+    }
+
 }
 
 //we now link our webcam stream
