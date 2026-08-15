@@ -59,6 +59,13 @@ hands.onResults((results) => {
     }
     canvasCtx.restore();
 });
+function setmeme(newsrc) {
+    // this only update the src if it's actually changing
+    // this will stop the GIF from constantly resetting every frame
+    if (!memework.src.endsWith(newsrc)) {
+        memework.src = newsrc;
+    }
+}
 //finally, we make the tracking real
 function detect(landmarks){
     //this will grab the landmarks of our index fingers tip and knuckle
@@ -73,10 +80,10 @@ function detect(landmarks){
 
 
     if(indexup && middledown){
-        memework.src = "assets/nerd.jpg";
+        setmeme("assets/nerd.jpg");
     }
     else if(indextip.y>middletip.y && indexknuckle.y>middleknuckle.y){
-        memework.src= "assets/freedom.jpg";
+        setmeme("assets/freedom.gif");
     }
 
 }

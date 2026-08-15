@@ -4,7 +4,12 @@ body {
     /*this centers all our text */
     text-align: center;
     /*this sets the background color*/
-    background-color:rgb(222, 209, 70);
+    background: linear-gradient(
+        to bottom,
+        #FF9933 0%, #FF9933 33.33%,  /* Top 1/3: Saffron */
+        #FFFFFF 33.33%, #FFFFFF 66.66%, /* Middle 1/3: White */
+        #138808 66.66%, #138808 100%    /* Bottom 1/3: Green */
+    );
     /*margin - space OUTSIDE the box
     padding - space INSIDE the box*/
     margin: 0;
