@@ -75,8 +75,8 @@ function detect(landmarks){
     if(indexup && middledown){
         memework.src = "assets/nerd.jpg";
     }
-    if(indextip.y<middletip.y && indexknuckle.y<middleknuckle.y){
-        memework.src= "assets/freedom.jpg"
+    if(indextip.y>middletip.y && indexknuckle.y>middleknuckle.y){
+        memework.src= "assets/freedom.jpg";
     }
 
 }
