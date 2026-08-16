@@ -20,9 +20,9 @@ This is a light-weight application that uses Google's MediaPipe Hands to track t
 
 ## Gestures Currently Supported
 
-| **Salute** | Hand raised high in top frame + Index, Middle, and Ring fingers extended - triggers a Indian Independence Day-themed GIF meme.
-| **Nerd Point** | Index finger extended UP + Middle finger curled DOWN - triggers a nerd cat meme. 
-| **Default Stare** | No active gesture or hand off-camera - triggers a default cat stare image.
+| **Salute** | Hand raised high in top frame + Index, Middle, and Ring fingers extended - triggers a Indian Independence Day-themed GIF meme.  
+| **Nerd Point** | Index finger extended UP + Middle finger curled DOWN - triggers a nerd cat meme.  
+| **Default Stare** | No active gesture or hand off-camera - triggers a default cat stare image.  
 
 ---
 
@@ -36,3 +36,8 @@ This is a light-weight application that uses Google's MediaPipe Hands to track t
 
 ## Future Scope  
 This project was built using a pre-trained model via API. Expect a project clone using a self-trained AI model in the future.
+
+---
+
+## Disclaimer
+*While this project was built with AI assistance, there is not a single piece of AI-written code. Since it was my first time building something like this, I built everything by myself, while using AI as a guide.*
