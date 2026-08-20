@@ -40,4 +40,4 @@ This project was built using a pre-trained model via API. Expect a project clone
 ---
 
 ## Disclaimer
-*While this project was built with AI assistance, there is not a single piece of AI-written code. Since it was my first time building something like this, I built everything by myself, while using AI as a guide.*
+*While this project was built with AI assistance and guidance, no AI-written code exists in this project.*
